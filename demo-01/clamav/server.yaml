@@ -3,4 +3,4 @@ services:
     image: clamav/clamav:unstable
     container_name: clamav
     ports:
-      - 3310:3310
+      - 3310:3310 
