@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Elucidate Object Detection</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="top-material">
+        <h2>Elucidate Object Detection</h2>
+        <form id="upload-form" enctype="multipart/form-data" class="mt-4">
+          <div class="input-group">
+            <label for="file-input">Select images</label>
+            <input type="file" id="file-input" class="form-control-file" multiple>
+          </div>
+          <div class="input-group">
+            <label for="server-select">Select server</label>
+            <select id="server-select" class="form-control">
+              <option value="YOLOv8 Nano">YOLOv8 Nano</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Upload</button>
+        </form>
+      </div>
+      <div id="image-container" class="mt-4">
+        <div class="image-container row">
+          <img id="original-image">
+        </div>
+        <div class="image-container row">
+          <img id="bounding-boxes">
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
